@@ -1,0 +1,312 @@
+/* Globala inställningar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logotyp */
+.logo-link {
+    display: inline-block;
+    line-height: 0;
+}
+.site-logo {
+    max-height: 175px;
+    width: auto;
+    display: block;
+}
+
+/* Header och nav */
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1rem 0;
+}
+.nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.nav a:hover {
+    color: #E5A000;  /* ersatt blått med amber */
+}
+
+/* Hero-sektion */
+.hero {
+    background: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Globala knappar */
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #E5A000;  /* ersatt blått med amber */
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+.btn:hover {
+    background: #f0f0f0;
+}
+
+/* Våra Tjänster */
+.features {
+    padding: 3rem 0;
+    background: #fff;
+}
+.features h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.feature {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+.feature h4 {
+    margin-bottom: 0.75rem;
+    color: #E5A000;  /* ersatt blått med amber */
+}
+.feature-link:hover .feature,
+.feature-link:focus .feature {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #E5A000;
+}
+
+/* Om oss */
+.about {
+    padding: 3rem 0;
+}
+.about h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.profile {
+    text-align: center;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007acc; /* behåll blå kant på profil */
+}
+.profile-name {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.social-links {
+    margin-top: 0.5rem;
+}
+.social-link {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.social-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.social-link:hover .social-icon {
+    opacity: 0.8;
+}
+.about-content p {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Kontaktformulär */
+.contact {
+    padding: 3rem 0;
+    background: #fff;
+}
+.contact h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+.contact label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+.contact input,
+.contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-family: inherit;
+}
+.contact button {
+    background: #E5A000;  /* knappen har också accentfärg */
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contact button:hover {
+    background: #CC8A00;  /* något mörkare vid hover */
+}
+
+/* Footer */
+.site-footer {
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Service-sidor */
+.service-page {
+    padding: 4rem 1rem;
+    background: #fff;
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-page h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #E5A000;  /* ersatt blått med amber */
+}
+.service-page p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: center;
+}
+.service-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+.service-page ul li {
+    position: relative;
+    padding: 1rem 1.25rem 1rem 2.5rem;
+    background: #f5faff;
+    border: 1px solid #e0edf8;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+.service-page ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #E5A000;  /* ersatt blått med amber */
+    z-index: 2;
+}
+.service-page .btn {
+    display: inline-block;
+    background: #E5A000;  /* knappen har också accentfärg */
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.2s ease;
+    margin-top: auto;
+}
+.service-page .btn:hover {
+    background: #CC8A00;
+    transform: translateY(-2px);
+}
+
+/* Responsiv anpassning */
+@media (min-width: 800px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+    .profile {
+        margin-right: 2rem;
+    }
+    .about-content p {
+        min-width: 300px;
+    }
+}
+
+
+/* Byter profilbildens kant till amber */
+.profile-img {
+    border: 3px solid #E5A000 !important;
+}
